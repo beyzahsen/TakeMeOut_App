@@ -21,7 +21,7 @@ class _ProfilePageTabState extends State<ProfilePageTab> {
                 padding: EdgeInsets.all(8),
                 child: Center(
                   child: Text(
-                    '👾',
+                    'Profil Picture',
                     style: TextStyle(
                       fontSize: 80,
                       decoration: TextDecoration.none,
