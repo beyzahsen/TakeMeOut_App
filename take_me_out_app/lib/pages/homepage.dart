@@ -34,11 +34,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         floatingActionButton: showFab
             ? FloatingActionButton(
                 backgroundColor: Colors.white,
-                child: const Icon(
-                  Icons.edit_calendar_rounded,
-                  size: 30,
-                  color: Color.fromARGB(208, 157, 124, 207),
-                ),
+                child: const Icon(Icons.edit_calendar_rounded, size: 30, color: Color.fromARGB(208, 157, 124, 207),),
                 onPressed: () {
                   if (_tabController.index == 1) {
                     _tabController.animateTo(0);
@@ -59,12 +55,10 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             labelColor: Color.fromARGB(255, 49, 55, 172),
             controller: _tabController,
             tabs: const [
-              Tab(icon: Icon(Icons.home_rounded)), //groups_rounded
-              Tab(
-                  icon: Icon(Icons
-                      .location_pin)), //location_pin, map_rounded, event_rounded
-              Tab(icon: Icon(Icons.email_rounded)),
-              Tab(icon: Icon(Icons.account_circle))
+              Tab(icon:Icon(Icons.home_rounded)), //groups_rounded
+              Tab(icon:Icon(Icons.location_pin)), //location_pin, map_rounded, event_rounded
+              Tab(icon:Icon(Icons.email_rounded)),
+              Tab(icon:Icon(Icons.account_circle))
             ],
           ),
         ),
